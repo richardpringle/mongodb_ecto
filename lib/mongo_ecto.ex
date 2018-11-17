@@ -158,7 +158,7 @@ defmodule Mongo.Ecto do
   which returns one entry or raises.
 
   There is also support for count function in queries that uses `MongoDB`'s
-  `count` command. Please not that unlike in SQL databases you can only select
+  `count` command. Please note that unlike in SQL databases you can only select
   a count - there is no support for querying using a count, there is also no
   support for counting documents and selecting them at the same time.
 
@@ -189,7 +189,7 @@ defmodule Mongo.Ecto do
   ## Commands
 
   MongoDB has many administrative commands you can use to manage your database.
-  We support them thourgh `Mongo.Ecto.command/2` function.
+  We support them through the `Mongo.Ecto.command/2` function.
 
       Mongo.Ecto.command(MyRepo, createUser: "ecto", ...)
 
@@ -339,7 +339,7 @@ defmodule Mongo.Ecto do
     * `:mongo_url` - A MongoDB [URL](https://docs.mongodb.com/manual/reference/connection-string/)
     * `:connect_timeout` - The timeout for establishing new connections
        (default: 5000)
-    * `:w` - MongoDB's write convern (default: 1). If set to 0, some of the
+    * `:w` - MongoDB's write concern (default: 1). If set to 0, some of the
       Ecto's functions may not work properely
     * `:j`, `:fsync`, `:wtimeout` - Other MongoDB's write concern options.
       Please consult MongoDB's documentation
